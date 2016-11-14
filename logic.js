@@ -29,7 +29,7 @@
 						document.getElementById(loc).style.color='red';
 						document.getElementById(loc).innerHTML=char;
 						document.getElementById("turn").value="0";
-						document.getElementById("msg").innerHTML="COMPUTER's TURN";	
+						document.getElementById("msg").innerHTML="Mohit's TURN";	
 						check();
 						computerTurn();
 					}
@@ -94,7 +94,7 @@
 			function winner(draworwin)
 			{
 				var turn=document.getElementById("turn").value;
-				var name=document.getElementById("turn").value=="0"?document.getElementById("player_name").value:"COMPUTER";
+				var name=document.getElementById("turn").value=="0"?document.getElementById("player_name").value:"Mohit";
 				/*if(document.getElementById("turn").value=="0")
 					name="Player 1";
 				else
@@ -113,7 +113,7 @@
 				if(v==1)
 				{
 					//Inverting Name
-					var name=document.getElementById("turn").value=="X"?document.getElementById("player_name").value:"COMPUTER";
+					var name=document.getElementById("turn").value=="X"?document.getElementById("player_name").value:"Mohit";
 					
 					document.getElementById("msg").innerHTML=name+"'s TURN";
 					for(var i=1;i<10;i++)
